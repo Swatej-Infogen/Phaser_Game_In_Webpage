@@ -3,8 +3,6 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'development',
   entry: {
-    projection: './src/IsoProjectionExample.js',
-    collision: './src/IsoCollisionExample.js',
     interaction: './src/IsoInteractionExample.js'
   },
   module: {
