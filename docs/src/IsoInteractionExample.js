@@ -2,8 +2,6 @@ import Phaser, { Game, Scene } from 'phaser';
 import IsoPlugin from 'phaser3-plugin-isometric';
 
 class IsoInteractionExample extends Phaser.Scene {
-
-
   constructor() {
   
     const sceneConfig = {
@@ -56,10 +54,6 @@ class IsoInteractionExample extends Phaser.Scene {
     this.load.atlas('progressBar', '../dist/assets/nine-slice.png', '../dist/assets/nine-slice.json');
 
     this.load.image('dialogue_box' , '../dist/assets/msg_box.png');
-
-    // for (var i = 0; i < 200; i++) {
-    //   this.load.image('logo'+i, '../dist/assets/stone.png');
-    // }
 
     this.load.scenePlugin({
       key: 'IsoPlugin',
@@ -313,4 +307,4 @@ let config = {
   scene: IsoInteractionExample
 };
 
-new Game(config);
+const game = new Phaser.Game(config);
